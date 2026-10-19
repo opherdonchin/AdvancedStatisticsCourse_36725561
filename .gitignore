@@ -11,7 +11,6 @@ __pycache__/
 build/
 develop-eggs/
 dist/
-downloads/
 eggs/
 .eggs/
 lib/
@@ -77,7 +76,8 @@ docs/_build/
 target/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
 # IPython
 profile_default/
@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Temporary and editor/OS files
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+~$*
+
+# Credentials and secrets (never publish)
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets.*
+service-account*.json
